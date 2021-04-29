@@ -1,0 +1,83 @@
+/* Start Global */
+*, *:before, *:after {
+    padding: 0px;
+    margin: 0px;
+    outline: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    @media (max-width: 720px) {
+    font-size: 87.5%; /*14px*/
+    }
+
+    @media (max-width: 1080px) {
+    font-size: 93.75%; /*15px*/
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    font-family: 'Antonio', sans-serif;
+}
+/* End Global */
+
+/* Start Login */
+.h1 {
+    text-align: center;
+}
+
+#form-side {
+    float: right;
+    width: 40%;
+    height: 100vh;
+    background-color: rgb(213, 252, 174);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#form-side input{
+    width: 70%;
+    height: 30px;
+    margin: 10px;
+    font-size: 1.3rem;
+    font-family: 'Antonio', sans-serif;
+}
+
+#form-side button{
+    width: 70%;
+    height: 30px;
+    margin: 10px;
+    font-family: 'Antonio', sans-serif;
+    font-size: 1.2rem;
+}
+
+#form-side select{
+    width: 70%;
+    height: 30px;
+    margin: 10px;
+    font-family: 'Antonio', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#form-login {
+    margin-top: 40px;
+}
+
+a {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 2px;
+}
+
+a:hover{
+    color: rgb(100, 100, 100);
+    border-bottom: 2px solid rgb(141, 140, 140);
+    padding-bottom: 2px;
+}
+/* End Login */
