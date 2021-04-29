@@ -18,12 +18,12 @@
             <img id="logo-form-login" src="../img/logo.svg" alt="" width="350">
             <h1 class="h1">Login</h1>
 
-            <form action="" id="form-login">
+            <form action="logar.php" method="POST" id="form-login">
                 <label for="E-mail">E-mail</label><br>
-                <input type="text" name="" id="E-mail" placeholder="Digite o seu E-mail"><br>
+                <input type="text" name="email" id="E-mail" placeholder="Digite o seu E-mail"><br>
 
                 <label for="Senha">Senha</label><br>
-                <input type="password" id="Senha" placeholder="Digite a sua senha"><br>
+                <input type="password" id="Senha" name="senha" placeholder="Digite a sua senha"><br>
 
                 <button type="submit">Entrar</button>
             </form>
