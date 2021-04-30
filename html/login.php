@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +21,17 @@
         <aside id="form-side">
             <img id="logo-form-login" src="../img/logo.svg" alt="" width="350">
             <h1 class="h1">Login</h1>
+
+            <?php
+            if(isset($_SESSION['nao_autenticado'])):
+            ?>
+                <div id="erro-login">
+                <p>Login ou senha invalidos</p>
+                </div>
+            <?php
+            endif;
+            unset($_SESSION['nao_autenticado']);
+            ?>
 
             <form action="logar.php" method="POST" id="form-login">
                 <label for="E-mail">E-mail</label><br>

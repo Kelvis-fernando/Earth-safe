@@ -23,7 +23,9 @@ if($row == 1) {
     header('Location: plataforma.php');
     exit();
 } else {
+    $_SESSION['nao_autenticado'] = true;
     header('Location: login.php');
+    exit;
 }
 
 
