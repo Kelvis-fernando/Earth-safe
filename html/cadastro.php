@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html lang="en">
 
 <head>
@@ -16,24 +20,38 @@
         <aside id="form-side">
             <img id="logo-form-login" src="../img/logo.svg" alt="" width="200">
             <h3 class="h1">Cadastro</h3>
+            <?php
+            if (isset($_SESSION['status_cadastro'])):
+            ?>
+            <div id="successo-cadastro">
+                <p>Cadastro Efetuado Com Sucesso</p>
+                <p>Faça o seu Login</p>
+            </div>
+            <?php
+            endif;
+            unset($_SESSION['status_cadastro']);
+            ?>
+            <?php
+            if (isset($_SESSION['usuario_existe'])):;
+            ?>
+            <div id="cadastro-existe">
+                <p>Este E-mail já existe, informe outro ou tente novamente</p>
+            </div>
+            <?php
+            endif;
+            unset($_SESSION['usuario_existe']);
+            ?>
 
-            <form action="" id="form-login">
+            <form action="cadastrar.php" method="POST" id="form-login">
                 <label for="nome">Nome</label><br>
-                <input type="text" name="" id="nome" placeholder="Digite o seu nome"><br>
+                <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" autofocus><br>
 
                 <label for="email">E-mail</label><br>
-                <input type="text" name="" id="email" placeholder="Digite o seu E-mail"><br>
+                <input type="text" name="email" id="email" placeholder="Digite o seu E-mail"><br>
 
                 <label for="senha">Senha</label><br>
-                <input type="password" id="senha" placeholder="Digite a sua senha"><br>
+                <input name="senha" type="password" id="senha" placeholder="Digite a sua senha"><br>
 
-                <label for="select">Sexo</label><br>
-                <select name="" id="select"><br>
-                    <option value="">Selecione o Sexo</option>
-                    <option value="">Masculino</option>
-                    <option value="">Feminino</option>
-                    <option value="">Outros</option>
-                </select><br>
                 <button type="submit">Cadastrar</button>
             </form>
             <p>Já tem uma conta? <a href="../html/login.php" id="link-cadastro">Faça o login</a></p>

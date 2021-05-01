@@ -6,5 +6,3 @@ define('SENHA', '');
 define('DB', 'loginearthsafe');
 
 $conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('Não foi possivel conectar');
-
-?>

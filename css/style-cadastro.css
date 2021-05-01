@@ -31,6 +31,14 @@ body {
     text-align: center;
 }
 
+#successo-cadastro p {
+    color: rgb(161, 253, 68);
+}
+
+#cadastro-existe p {
+    color: rgb(248, 120, 120);
+}
+
 #form-side {
     float: right;
     width: 40%;

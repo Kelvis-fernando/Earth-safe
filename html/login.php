@@ -11,8 +11,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style-login.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
 
@@ -23,10 +22,10 @@ session_start();
             <h1 class="h1">Login</h1>
 
             <?php
-            if(isset($_SESSION['nao_autenticado'])):
+            if (isset($_SESSION['nao_autenticado'])) :
             ?>
                 <div id="erro-login">
-                <p>Login ou senha invalidos</p>
+                    <p>Login ou senha invalidos</p>
                 </div>
             <?php
             endif;
@@ -35,7 +34,7 @@ session_start();
 
             <form action="logar.php" method="POST" id="form-login">
                 <label for="E-mail">E-mail</label><br>
-                <input type="text" name="email" id="E-mail" placeholder="Digite o seu E-mail"><br>
+                <input type="text" name="email" id="E-mail" placeholder="Digite o seu E-mail" autofocus><br>
 
                 <label for="Senha">Senha</label><br>
                 <input type="password" id="Senha" name="senha" placeholder="Digite a sua senha"><br>

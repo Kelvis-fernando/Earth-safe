@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
 
@@ -143,20 +142,19 @@
         </section>
     </main>
     <footer id="footer">
-        <ul>
-            <li>
-                <img src="../img/twitter.png" alt="" class="social-media-icons">
-                <p>Twitter</p>
-            </li>
-            <li>
-                <img src="../img/facebook.svg" alt="" class="social-media-icons">
-                <p>Facebook</p>
-            </li>
-            <li>
-                <img src="../img/youtube.svg" alt="" class="social-media-icons">
-                <p>Youtube</p> teste
-            </li>
-        </ul>
+        <h3>Nos siga nas redes socias</h3>
+        <div class="social-media">
+            <img src="../img/instagram.png" alt="" class="social-media-icons">
+        </div>
+
+        <div class="social-media">
+            <img src="../img/facebook.png" alt="" class="social-media-icons">
+        </div>
+
+        <div class="social-media">
+            <img src="../img/youtube.png" alt="" class="social-media-icons">
+        </div>
+
     </footer>
 </body>
 

@@ -8,11 +8,12 @@
 </head>
 
 <body>
-    
-    <h1> <a href="logout.php">Sair</a> 
+
+    <h1> <a href="logout.php">Sair</a>
         <?php
-            include('verifica_login.php');
-            print_r($_SESSION);exit;
+        include('verifica_login.php');
+        print_r($_SESSION);
+        exit;
         ?>
 
     </h1>
