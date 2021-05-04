@@ -32,7 +32,7 @@ session_start();
             unset($_SESSION['nao_autenticado']);
             ?>
 
-            <form action="logar.php" method="POST" id="form-login">
+            <form action="../php/logar.php" method="POST" id="form-login">
                 <label for="E-mail">E-mail</label><br>
                 <input type="text" name="email" id="E-mail" placeholder="Digite o seu E-mail" autofocus><br>
 
@@ -41,7 +41,7 @@ session_start();
 
                 <button type="submit">Entrar</button>
             </form>
-            <p>Não tem uma conta ainda? <a href="../html/cadastro.php" id="link-cadastro">Cadastre-se</a></p>
+            <p>Não tem uma conta ainda? <a href="../views/cadastro.php" id="link-cadastro">Cadastre-se</a></p>
 
         </aside>
         <aside>

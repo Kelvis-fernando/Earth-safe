@@ -1,5 +1,5 @@
 <?php
-    include('verifica_login.php');
+    include('../php/verifica_login.php');
 ?>
 
 <html lang="en">
@@ -23,7 +23,7 @@
                     <a href="" class="link-side-bar">Home</a>
                 </li>
                 <li>
-                    <a href="" class="link-side-bar">Plataforma</a>
+                    <a href="../views/login.php" class="link-side-bar">Plataforma</a>
                 </li>
                 <li>
                     <a href="" class="link-side-bar">Crm</a>
@@ -35,7 +35,7 @@
         </aside>
 
         <nav id="navigation-plat">
-            <a href="logout.php">Logout</a>
+            <a href="../php/logout.php">Logout</a>
         </nav>
     </header>
     <div class="clear"></div>

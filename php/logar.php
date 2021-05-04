@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include('conexao.php');
+include('../php/conexao.php');
 
 if (empty($_POST['email']) || empty($_POST['senha'])) {
     header('Location: login.php');
@@ -20,10 +20,10 @@ $row = mysqli_num_rows($result);
 
 if($row == 1) {
     $_SESSION['email'] = $email;
-    header('Location: plataforma.php');
+    header('Location: ../views/plataforma.php');
     exit();
 } else {
     $_SESSION['nao_autenticado'] = true;
-    header('Location: login.php');
+    header('Location: ../views/login.php');
     exit;
 }

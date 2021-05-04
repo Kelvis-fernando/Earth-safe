@@ -26,7 +26,7 @@
                 </li>
 
                 <li>
-                    <a href="./login.php">Plataforma</a>
+                    <a href="../views/login.php">Plataforma</a>
                 </li>
             </ul>
         </nav>

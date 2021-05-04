@@ -42,7 +42,7 @@ session_start();
             unset($_SESSION['usuario_existe']);
             ?>
 
-            <form action="cadastrar.php" method="POST" id="form-login">
+            <form action="../php/cadastrar.php" method="POST" id="form-login">
                 <label for="nome">Nome</label><br>
                 <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" autofocus><br>
 
@@ -54,7 +54,7 @@ session_start();
 
                 <button type="submit">Cadastrar</button>
             </form>
-            <p>Já tem uma conta? <a href="../html/login.php" id="link-cadastro">Faça o login</a></p>
+            <p>Já tem uma conta? <a href="../views/login.php" id="link-cadastro">Faça o login</a></p>
         </aside>
         <aside>
             <img src="../img/example-scene-3.svg" alt="" width="805">
